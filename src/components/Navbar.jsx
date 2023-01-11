@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import imageLogo from '../assets/img/logo.png';
-import {FaBars, FaShoppingCart, FaInstagram, FaEnvelope, FaPhone} from 'react-icons/fa'
+import {FaBars, FaShoppingCart, FaWindowClose, FaInstagram, FaEnvelope, FaPhone} from 'react-icons/fa'
 
 const Navbar = () => {
 
-    const [navClass, setNavClass] = useState('absolute top-0 left-0 grid grid-cols-1 bg-magenta-opa w-screen h-screen')
+    const [navClass, setNavClass] = useState('hidden')
 
     const handleOpenMenu = () => {
         setNavClass('absolute top-0 left-0 grid grid-cols-1 bg-magenta-opa w-screen h-screen')
@@ -21,13 +21,13 @@ const Navbar = () => {
             <div className='containerTwo w-18 bg-sand-bg px-10 py-2 grid grid-cols-5 gap-10 items-center justify-items-center'>
                 <div className='colOne col-start-1 col-end-2 items-center'>
                     <button onClick={handleOpenMenu}>
-                        <FaBars size={25} className='fill-purple-dark cursor-pointer' />
+                        <FaBars size={25} className='fill-purple-dark cursor-pointer'/>
                     </button>
                     <nav className={navClass}>
                         <div className='w-9/12 text-base font-normal text-light bg-magenta-light pt-16' >
                             <div className='grid grid-cols-1 pl-12'>
                                 <button onClick={handleCloseMenu} className='py-5'>
-                                        <FaBars size={25} className='fill-light cursor-pointer'/>
+                                    <FaWindowClose size={25} className='fill-light cursor-pointer'/>
                                 </button>
                                 <a className='tracking-widest pl-10 py-1' href='#Home'>HOME</a>
                                 <a className='tracking-widest pl-10 py-1' href=''>PERSONALIZADOS</a>
