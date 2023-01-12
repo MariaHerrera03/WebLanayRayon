@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar'
 
 const Home = () => {
     return (
-        <div id='Home' className='bg-sand-bg'>
+        <div className='bg-sand-bg'>
             <Navbar/>
             <Carousel/>
             <Collections/>

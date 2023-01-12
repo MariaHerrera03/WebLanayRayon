@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import imageLogo from '../assets/img/logo.png';
-import {FaBars, FaShoppingCart, FaInstagram, FaEnvelope, FaPhone} from 'react-icons/fa'
-import {RiCloseFill} from 'react-icons/ri'
+import { FaBars, FaShoppingCart, FaInstagram, FaEnvelope, FaPhone } from 'react-icons/fa'
+import { RiCloseFill } from 'react-icons/ri'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -30,8 +31,8 @@ const Navbar = () => {
                                 <button onClick={handleCloseMenu} className='py-5'>
                                     <RiCloseFill size={33} className='fill-light cursor-pointer'/>
                                 </button>
-                                <a className='tracking-widest pl-10 py-1' href='#Home'>HOME</a>
-                                <a className='tracking-widest pl-10 py-1' href=''>PERSONALIZADOS</a>
+                                <Link to='/' className='tracking-widest pl-10 py-1'>HOME</Link>
+                                <Link to='/personalizados' className='tracking-widest pl-10 py-1' href=''>PERSONALIZADOS</Link>
                                 <a className='tracking-widest pl-10 py-1' href=''>RELIGIOSOS</a>
                                 <a className='tracking-widest pl-10 pt-1 pb-20' href=''>NAVIDEÑOS</a>
                             </div>
@@ -61,7 +62,7 @@ const Navbar = () => {
                     </nav>
                 </div>
                 <div className='colTwo col-start-2 col-end-5 items-center w-16'>
-                    <a href='#Home'><img src={imageLogo} alt='Logo Lana & Rayón'/></a>
+                    <Link to='/'><img src={imageLogo} alt='Logo Lana & Rayón'/></Link>
                 </div>
                 <div className='colThree col-start-5 col-end-6 items-center'>
                     <a href=''><FaShoppingCart size={25} className='fill-purple-dark'/></a>
