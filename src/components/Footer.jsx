@@ -16,7 +16,7 @@ function Footer() {
             <div className='containerTwo grid grid-cols-1 bg-purple-light px-20 py-4 justify-items-center'>
                 <div className='containerTwoOne flex items-center py-1'>
                     <FaEnvelope size={37} className='fill-purple-bg px-2'/>
-                    <h1 className='text-center text-light text-sm leading-5'>lana&rayon@gmail.com</h1>
+                    <h1 className='text-center text-light text-sm leading-5'>lanayrayon@gmail.com</h1>
                 </div>
                 <div className='containerOTwoTwo flex items-center py-1'>
                     <a href='https://api.whatsapp.com/send?phone=573203401248'>

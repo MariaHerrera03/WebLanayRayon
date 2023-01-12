@@ -7,7 +7,7 @@ import imageThree from '../assets/img/imgCollThree.png';
 function Collections() {
     return (
         <div>
-            <div className='containerOne px-10 py-4'>
+            <div className='containerOne px-10 pt-8 pb-4'>
                 <h1 className='text-center text-magenta-dark text-xl leading-5'>COLECCIONES</h1>
             </div>
             <div className='containerTwo bg-orange-bg mx-10 my-2 grid grid-cols-2 items-center justify-items-center'>

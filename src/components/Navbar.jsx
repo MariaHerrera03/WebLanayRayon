@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import imageLogo from '../assets/img/logo.png';
-import {FaBars, FaShoppingCart, FaWindowClose, FaInstagram, FaEnvelope, FaPhone} from 'react-icons/fa'
+import {FaBars, FaShoppingCart, FaInstagram, FaEnvelope, FaPhone} from 'react-icons/fa'
+import {RiCloseFill} from 'react-icons/ri'
 
 const Navbar = () => {
 
@@ -14,7 +15,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className='sticky top-0 w-full'>
+        <div className='sticky z-[100] top-0 w-full'>
             <div className='containerOne bg-sand-light-70 px-10 py-2'>
                 <h5 className='text-center text-purple-dark text-xs leading-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</h5>
             </div>
@@ -27,7 +28,7 @@ const Navbar = () => {
                         <div className='w-9/12 text-base font-normal text-light bg-magenta-light pt-16' >
                             <div className='grid grid-cols-1 pl-12'>
                                 <button onClick={handleCloseMenu} className='py-5'>
-                                    <FaWindowClose size={25} className='fill-light cursor-pointer'/>
+                                    <RiCloseFill size={33} className='fill-light cursor-pointer'/>
                                 </button>
                                 <a className='tracking-widest pl-10 py-1' href='#Home'>HOME</a>
                                 <a className='tracking-widest pl-10 py-1' href=''>PERSONALIZADOS</a>
@@ -46,7 +47,7 @@ const Navbar = () => {
                             </div>
                             <div className='containerMenuTwo flex items-center'>
                                 <FaEnvelope size={35} className='fill-light px-2'/>
-                                <h1 className='text-light text-sm leading-5'>lana&rayon@gmail.com</h1>
+                                <h1 className='text-light text-sm leading-5'>lanayrayon@gmail.com</h1>
                             </div>
                             <div className='containerMenuThree flex items-center'>
                                 <a href='https://api.whatsapp.com/send?phone=573203401248'>
