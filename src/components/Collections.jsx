@@ -19,7 +19,7 @@ function Collections() {
                     <a href=''><img className='' src={imageOne} alt='Imagen personalizados'/></a>
                 </div>
                 <div>
-                    <a href=''><img className='' src={imageTwo} alt='Imagen personalizados'/></a>
+                    <a href=''><img className='' src={imageTwo} alt='Imagen religiosos'/></a>
                 </div>
                 <div className='text-orange-dark text-base text-center px-6'>
                     <h2 className='font-bold tracking-widest'>Religiosos</h2>
@@ -30,7 +30,7 @@ function Collections() {
                     <h3 className='leading-5'>Of the printing and typesetting industry.</h3>
                 </div>
                 <div>
-                    <a href=''><img className='' src={imageThree} alt='Imagen personalizados'/></a>
+                    <a href=''><img className='' src={imageThree} alt='Imagen navideños'/></a>
                 </div>
             </div>
         </div>

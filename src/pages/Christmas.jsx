@@ -1,13 +1,13 @@
 import React from 'react'
 import Footer from '../components/Footer'
-import MosaicP from '../components/MosaicP'
+import MosaicC from '../components/MosaicC'
 import Navbar from '../components/Navbar'
 
 function Personalized() {
     return (
         <div className='bg-sand-bg'>
             <Navbar/>
-            <MosaicP/>
+            <MosaicC/>
             <Footer/>
         </div>
     )

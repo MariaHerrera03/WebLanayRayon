@@ -33,8 +33,8 @@ const Navbar = () => {
                                 </button>
                                 <Link to='/' className='tracking-widest pl-10 py-1'>HOME</Link>
                                 <Link to='/personalizados' className='tracking-widest pl-10 py-1' href=''>PERSONALIZADOS</Link>
-                                <a className='tracking-widest pl-10 py-1' href=''>RELIGIOSOS</a>
-                                <a className='tracking-widest pl-10 pt-1 pb-20' href=''>NAVIDEÑOS</a>
+                                <Link to='/religiosos' className='tracking-widest pl-10 py-1' href=''>RELIGIOSOS</Link>
+                                <Link to='/navideños' className='tracking-widest pl-10 pt-1 pb-20' href=''>NAVIDEÑOS</Link>
                             </div>
                         </div>
                         <div className='w-9/12 py-12 px-12 grid grid-cols-1 bg-magenta-dark justify-items-center'>
