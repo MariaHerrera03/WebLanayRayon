@@ -72,7 +72,7 @@ const Navbar = () => {
                 </div>
                 <div className='colThree col-start-5 col-end-6 items-center'>
                     <button onClick={() => setOpenDetailsCart(!isOpenDetailsCart)} className='relative'><FaShoppingCart size={25} className='fill-purple-dark'/>
-                        <span className="rigth-0 absolute top-0 translate-x-1 rounded-full bg-orange-light px-1 text-xs font-bold text-sand-bg">
+                        <span className="rigth-0 absolute top-0 translate-x-1 rounded-full bg-orange-light px-1 text-xs font-bold text-sand-bg text-center">
                             {totalQuantityProduct}
                         </span>
                     </button>

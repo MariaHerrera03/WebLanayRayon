@@ -14,8 +14,8 @@ function Modal({visible, onClose}) {
 
     const objectProduct = {
         id: 1,
-        title: 'Bolitas x 6 para el árbol',
-        price: 80,
+        title: 'Muñeco personalizado de un humano',
+        price: 55000,
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys.',
         image: "https://github.com/MariaHerrera03/ImageBank/blob/main/PersonalizadosUNO.png?raw=true",
     };
@@ -30,7 +30,7 @@ function Modal({visible, onClose}) {
                         {objectProduct.title}
                     </h1>
                     <h2 className='text-base font-bold text-orange-light py-4'>
-                        {objectProduct.price}
+                        $ {objectProduct.price}
                     </h2>
                     <p className='text-base leading-5 text-orange-light'>
                         {objectProduct.description}
