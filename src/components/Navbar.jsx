@@ -1,11 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import imageLogo from '../assets/img/logo.png';
 import { FaBars, FaShoppingCart, FaInstagram, FaEnvelope, FaPhone } from 'react-icons/fa'
 import { RiCloseFill } from 'react-icons/ri'
 import { Link } from 'react-router-dom'
-import Ejemplo from '../components/Ejemplo'
+import Cart from './Cart';
+import { useCartDetails } from '../context/useCartDetails';
 
 const Navbar = () => {
+
+    const { totalQuantityProduct } = useContext(useCartDetails);
 
     const [navClass, setNavClass] = useState('hidden')
 
@@ -68,9 +71,13 @@ const Navbar = () => {
                     <Link to='/'><img src={imageLogo} alt='Logo Lana & Rayón'/></Link>
                 </div>
                 <div className='colThree col-start-5 col-end-6 items-center'>
-                    <button onClick={() => setOpenDetailsCart(!isOpenDetailsCart)}><FaShoppingCart size={25} className='fill-purple-dark'/></button>
+                    <button onClick={() => setOpenDetailsCart(!isOpenDetailsCart)} className='relative'><FaShoppingCart size={25} className='fill-purple-dark'/>
+                        <span className="rigth-0 absolute top-0 translate-x-1 rounded-full bg-orange-light px-2 text-xs font-bold text-white">
+                            {totalQuantityProduct}
+                        </span>
+                    </button>
                     {
-                        isOpenDetailsCart && <Ejemplo/>
+                        isOpenDetailsCart && <Cart/>
                     }
                 </div>
             </div>
