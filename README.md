@@ -16,9 +16,7 @@ Para desplegar este proyecto:
 ```bash
   Clonar o descargar repositorio
 ```
-```bash
-  Ejecutar archivo Index.html
-```  
+
 ## Design 🖍️
 
 Te presento el diseño inicial:
