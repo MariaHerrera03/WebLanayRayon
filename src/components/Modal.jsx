@@ -17,11 +17,11 @@ function Modal({visible, onClose}) {
         title: 'Bolitas x 6 para el árbol',
         price: 80,
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys.',
-        image: 'https://github.com/MariaHerrera03/weblanayrayon/blob/main/src/assets/img/imgCarouselThree.png?raw=true',
+        image: "https://github.com/MariaHerrera03/ImageBank/blob/main/PersonalizadosUNO.png?raw=true",
     };
 
     return (
-        <div id='container' onClick={handleOnClose} className='fixed inset-0 backdrop-blur-md flex justify-center items-center z-[20]'>
+        <div id='container' onClick={handleOnClose} className='fixed inset-0 backdrop-blur-md flex justify-center items-center z-[30]'>
             <div className='bg-sand-bg p-2 w-4/5 rounded-sm border-2 border-magenta-light'>
                 <button onClick={onClose} className='relative -top-6 w-full bg-black'><RiCloseFill size={25} className='absolute fill-magenta-dark cursor-pointer right-0 top-0'/></button>
                 <img className='containerMosaicOne w-full aspect-square bg-cover border-2 border-magenta-light' src={objectProduct.image}></img>

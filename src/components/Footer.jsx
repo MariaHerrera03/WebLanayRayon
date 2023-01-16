@@ -7,8 +7,8 @@ function Footer() {
             <div className='containerOne bg-purple-bg px-10 py-4'>
                 <h1 className='text-center text-purple-dark text-sm leading-5'>Sé la o el primera(o) en conocer nuestras promociones, novedades y actividades</h1>
                 <div className='containerOneOne grid grid-cols-1 py-2'>
-                    <h1 className=' text-purple-dark text-sm leading-5 font-bold py-1'>Siguenos</h1>
-                    <a href='https://www.instagram.com/lanayrayon/'>
+                    <h1 className='text-center text-purple-dark text-sm leading-5 font-bold py-1'>Siguenos</h1>
+                    <a href='https://www.instagram.com/lanayrayon/' className='place-self-center'>
                         <FaInstagram size={25} className='fill-purple-light'/>
                     </a>
                 </div>

@@ -13,7 +13,7 @@ const Navbar = () => {
     const [navClass, setNavClass] = useState('hidden')
 
     const handleOpenMenu = () => {
-        setNavClass('absolute top-0 left-0 grid grid-cols-1 bg-magenta-light/50 backdrop-blur-sm w-screen h-screen')
+        setNavClass('absolute z-[40] top-0 left-0 grid grid-cols-1 bg-magenta-light/50 backdrop-blur-sm w-screen h-screen')
     };
     const handleCloseMenu = () => {
         setNavClass('hidden')
@@ -22,7 +22,7 @@ const Navbar = () => {
     const [isOpenDetailsCart, setOpenDetailsCart] = useState(false)
 
     return (
-        <div className='sticky z-[10] top-0 w-full'>
+        <div className='sticky z-[20] top-0 w-full'>
             <div className='containerOne bg-sand-light-70 px-10 py-2'>
                 <h5 className='text-center text-purple-dark text-xs leading-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</h5>
             </div>
@@ -72,7 +72,7 @@ const Navbar = () => {
                 </div>
                 <div className='colThree col-start-5 col-end-6 items-center'>
                     <button onClick={() => setOpenDetailsCart(!isOpenDetailsCart)} className='relative'><FaShoppingCart size={25} className='fill-purple-dark'/>
-                        <span className="rigth-0 absolute top-0 translate-x-1 rounded-full bg-orange-light px-2 text-xs font-bold text-white">
+                        <span className="rigth-0 absolute top-0 translate-x-1 rounded-full bg-orange-light px-1 text-xs font-bold text-sand-bg">
                             {totalQuantityProduct}
                         </span>
                     </button>

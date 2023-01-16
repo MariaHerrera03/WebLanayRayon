@@ -9,7 +9,7 @@ function Mosaic() {
             </div>
             <section className='containerTwo px-5 py-6 flex flex-row flex-wrap gap-4 w-full h-full place-content-center'>
                 <div className='flex flex-col w-32'>
-                    <div className='containerMosaicOne relative w-32 aspect-square bg-[url("https://github.com/MariaHerrera03/weblanayrayon/blob/main/src/assets/img/imgCollThree.png?raw=true")] bg-cover'>
+                    <div className='containerMosaicOne relative w-32 aspect-square bg-[url("https://github.com/MariaHerrera03/ImageBank/blob/main/Navide%C3%B1osTRES.png?raw=true")] bg-cover'>
                         <button>
                             <RiAddFill size={33} className='absolute fill-orange-light cursor-pointer top-0 right-0'/>
                         </button>
@@ -23,7 +23,7 @@ function Mosaic() {
                     </div>
                 </div>
                 <div className='flex flex-col w-32'>
-                    <div className='containerMosaicOne relative w-32 aspect-square bg-[url("https://github.com/MariaHerrera03/weblanayrayon/blob/main/src/assets/img/imgCollThree.png?raw=true")] bg-cover'>
+                    <div className='containerMosaicOne relative w-32 aspect-square bg-[url("https://github.com/MariaHerrera03/ImageBank/blob/main/Navide%C3%B1osDOS.png?raw=true")] bg-cover'>
                         <button>
                             <RiAddFill size={33} className='absolute fill-orange-light cursor-pointer top-0 right-0'/>
                         </button>
@@ -37,7 +37,7 @@ function Mosaic() {
                     </div>
                 </div>
                 <div className='flex flex-col w-32'>
-                    <div className='containerMosaicOne relative w-32 aspect-square bg-[url("https://github.com/MariaHerrera03/weblanayrayon/blob/main/src/assets/img/imgCollThree.png?raw=true")] bg-cover'>
+                    <div className='containerMosaicOne relative w-32 aspect-square bg-[url("https://github.com/MariaHerrera03/ImageBank/blob/main/Navide%C3%B1osUNO.png?raw=true")] bg-cover'>
                         <button>
                             <RiAddFill size={33} className='absolute fill-orange-light cursor-pointer top-0 right-0'/>
                         </button>

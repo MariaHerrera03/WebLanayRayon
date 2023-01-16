@@ -28,7 +28,7 @@ function Mosaic() {
         title: 'Bolitas x 6 para el árbol',
         price: 80000,
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys.',
-        image: 'https://github.com/MariaHerrera03/weblanayrayon/blob/main/src/assets/img/imgCarouselThree.png?raw=true',
+        image: "https://github.com/MariaHerrera03/ImageBank/blob/main/PersonalizadosUNO.png?raw=true",
         quantity: count || 1,
     };
 
@@ -45,36 +45,36 @@ function Mosaic() {
             </div>
             <section className='containerTwo px-5 py-6 flex flex-row flex-wrap gap-4 w-full h-full place-content-center'>
                 <div className='flex flex-col w-32'>
-                    <div className='containerMosaicOne relative w-32 aspect-square bg-[url("https://github.com/MariaHerrera03/weblanayrayon/blob/main/src/assets/img/imgCollOne.png?raw=true")] bg-cover'>
+                    <div className='containerMosaicOne relative w-32 aspect-square bg-[url("https://github.com/MariaHerrera03/ImageBank/blob/main/PersonalizadosUNO.png?raw=true")] bg-cover'>
                         <button onClick={() => setShowModal(true)}>
                             <RiAddFill size={33} className='absolute fill-orange-light cursor-pointer top-0 right-0'/>
                         </button>
                         <button onClick={handleAddToCart} className='absolute bg-yellow-light/90 w-full h-1/4 bottom-0 text-center'>
                             <h2 className='text-yellow-dark text-sm font-bold inline-block'>Agregar al carrito</h2>
                         </button>
-                    </div>    
+                    </div>  
+                    <div className="col-span-3 flex items-baseline justify-between py-1 px-4 pb-2">
+                        <button
+                            className="text-xl font-bold text-orange-light"
+                            onClick={decrementCount}
+                        >
+                            -
+                        </button>
+                        <span className=' text-orange-light text-sm font-bold'>{count}</span>
+                        <button
+                            className="text-xl font-bold text-orange-light"
+                            onClick={() => setCount(count + 1)}
+                        >
+                            +
+                        </button>
+                    </div>  
                     <div className='text-center'>
-                        <h3 className='text-orange-dark text-sm leading-4 pt-2'>Muñeco personalizado de un humano</h3>
-                        <h2 className='text-orange-dark text-sm font-bold tracking-wide pt-1'>$55.000 COP</h2>
+                        <h3 className='text-orange-dark text-sm leading-4 pt-0'>Muñeco personalizado de un humano</h3>
+                        <h2 className='text-orange-dark text-sm font-bold tracking-wide py-2'>$55.000 COP</h2>
                     </div>
-                    <div className="col-span-3 flex items-baseline justify-between rounded-md bg-gray-200 py-2 px-5 pb-3 md:col-span-1">
-                    <button
-                        className="text-3xl text-orange-primary"
-                        onClick={decrementCount}
-                    >
-                        -
-                    </button>
-                    <span className="text-xl">{count}</span>
-                    <button
-                        className="text-3xl text-orange-primary"
-                        onClick={() => setCount(count + 1)}
-                    >
-                        +
-                    </button>
-                </div>
                 </div>
                 <div className='flex flex-col w-32'>
-                    <div className='containerMosaicOne relative w-32 aspect-square bg-[url("https://github.com/MariaHerrera03/weblanayrayon/blob/main/src/assets/img/imgCollOne.png?raw=true")] bg-cover'>
+                    <div className='containerMosaicOne relative w-32 aspect-square bg-[url("https://github.com/MariaHerrera03/ImageBank/blob/main/PersonalizadosDOS.png?raw=true")] bg-cover'>
                         <button>
                             <RiAddFill size={33} className='absolute fill-orange-light cursor-pointer top-0 right-0'/>
                         </button>
@@ -88,7 +88,7 @@ function Mosaic() {
                     </div>
                 </div>
                 <div className='flex flex-col w-32'>
-                    <div className='containerMosaicOne relative w-32 aspect-square bg-[url("https://github.com/MariaHerrera03/weblanayrayon/blob/main/src/assets/img/imgCollOne.png?raw=true")] bg-cover'>
+                    <div className='containerMosaicOne relative w-32 aspect-square bg-[url("https://github.com/MariaHerrera03/ImageBank/blob/main/PersonalizadosTRES.png?raw=true")] bg-cover'>
                         <button>
                             <RiAddFill size={33} className='absolute fill-orange-light cursor-pointer top-0 right-0'/>
                         </button>

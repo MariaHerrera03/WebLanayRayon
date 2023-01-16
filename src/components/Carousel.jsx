@@ -5,10 +5,10 @@ import {FaChevronLeft, FaChevronRight, FaCircle} from 'react-icons/fa'
 function Carousel() {
 
     const slides = [
-        { url: 'https://github.com/MariaHerrera03/weblanayrayon/blob/main/src/assets/img/imgCarouselOne.png?raw=true',},
-        { url: 'https://github.com/MariaHerrera03/weblanayrayon/blob/main/src/assets/img/imgCarouselTwo.png?raw=true',},
-        { url: 'https://github.com/MariaHerrera03/weblanayrayon/blob/main/src/assets/img/imgCarouselThree.png?raw=true',},
-        { url: 'https://github.com/MariaHerrera03/weblanayrayon/blob/main/src/assets/img/imgCarouselFour.png?raw=true',},
+        { url: 'https://github.com/MariaHerrera03/ImageBank/blob/main/imgCarouselOne.png?raw=true',},
+        { url: 'https://github.com/MariaHerrera03/ImageBank/blob/main/imgCarouselTwo.png?raw=true',},
+        { url: 'https://github.com/MariaHerrera03/ImageBank/blob/main/imgCarouselThree.png?raw=true',},
+        { url: 'https://github.com/MariaHerrera03/ImageBank/blob/main/imgCarouselFour.png?raw=true',},
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);

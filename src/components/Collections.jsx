@@ -1,7 +1,5 @@
 import React from 'react'
-import imageOne from '../assets/img/imgCollOne.png';
-import imageTwo from '../assets/img/imgCollTwo.png';
-import imageThree from '../assets/img/imgCollThree.png';
+import { Link } from 'react-router-dom';
 
 
 function Collections() {
@@ -16,10 +14,10 @@ function Collections() {
                     <h3 className='leading-5 text-center'>Of the printing and typesetting industry.</h3>
                 </div>
                 <div>
-                    <a href=''><img className='' src={imageOne} alt='Imagen personalizados'/></a>
+                    <Link to='/personalizados' href=''><img className='' src={'https://github.com/MariaHerrera03/ImageBank/blob/main/imgCollOne.png?raw=true'} alt='Imagen personalizados'/></Link>
                 </div>
                 <div>
-                    <a href=''><img className='' src={imageTwo} alt='Imagen religiosos'/></a>
+                    <Link to='/religiosos' href=''><img className='' src={'https://github.com/MariaHerrera03/ImageBank/blob/main/imgCollTwo.png?raw=true'} alt='Imagen personalizados'/></Link>
                 </div>
                 <div className='text-orange-dark text-base text-center px-6'>
                     <h2 className='font-bold tracking-widest'>Religiosos</h2>
@@ -30,7 +28,7 @@ function Collections() {
                     <h3 className='leading-5'>Of the printing and typesetting industry.</h3>
                 </div>
                 <div>
-                    <a href=''><img className='' src={imageThree} alt='Imagen navideños'/></a>
+                    <Link to='/navideños' href=''><img className='' src={'https://github.com/MariaHerrera03/ImageBank/blob/main/imgCollThree.png?raw=true'} alt='Imagen personalizados'/></Link>
                 </div>
             </div>
         </div>

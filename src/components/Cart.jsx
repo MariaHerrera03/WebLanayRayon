@@ -7,45 +7,45 @@ export default () => {
     const { cartProducts, deleteCartProducts } = useContext(useCartDetails);
 
     return (
-        <section className="absolute top-[125%] left-0 z-10 w-full md:left-full md:top-full md:max-w-lg md:-translate-x-full">
-            <div className="mx-4 rounded-md bg-white shadow-md">
-                <h4 className="px-6 py-8 text-lg font-bold">Cart</h4>
+        <section className="absolute z-[10] w-full left-0 place-content-center px-8 top-[110%]">
+            <div className="shadow-md bg-sand-bg p-2 w-full rounded-sm border-2 border-magenta-light">
+                <h4 className="text-base font-bold tracking-widest text-magenta-dark text-center pt-2 pb-4">TU CARRITO</h4>
                 <hr />
                 {cartProducts.length === 0 && (
-                    <p className="py-16 text-center">Your cart is empty</p>
+                    <p className=" text-center text-orange-dark text-sm leading-4 py-10">Tu carrito está vacío</p>
                 )}
                 {cartProducts.map((product) => (
                     <article
                         key={product.id}
                         className="grid grid-cols-[1fr_4fr_1fr] items-center gap-6 px-6 py-4"
                     >
-                        <img src={product.img} alt="" className="rounded-md" />
+                        <img src={product.img} alt="" className=""/>
                         <div>
-                            <h6>{product.title}</h6>
+                            <h2 className='text-base uppercase tracking-widest text-purple-dark pb-1'>{product.title}</h2>
                             <p>
-                                <span>
-                                    ${product.price} x{" "}
+                                <h3 className='text-base font-bold uppercase tracking text-purple-light pb-1'>
+                                    $ {product.price} x{" "}
                                     {product.quantity}
-                                </span>{" "}
-                                <span className="font-bold">
+                                </h3>{" "}
+                                <h3 className="text-lg font-bold uppercase tracking text-purple-dark pb-2">
                                     $
                                     {(
                                         product.price * product.quantity
-                                    ).toFixed(2)}
-                                </span>
+                                    )}
+                                </h3>
                             </p>
                         </div>
                         <button
                             className="ml-auto"
                             onClick={() => deleteCartProducts(product.id)}
                         >
-                            <AiFillDelete className="hover:fill-orange-primary" />
+                            <AiFillDelete className="fill-magenta-light" />
                         </button>
                     </article>
                 ))}
                 {cartProducts.length !== 0 && (
-                    <div className="px-6 pb-8">
-                        <button className="w-full rounded-md bg-orange-primary py-4 text-white transition-all hover:bg-orange-700">
+                    <div className="px-6 pb-6">
+                        <button className="w-full font-bold tracking-widest rounded-sm bg-yellow-dark uppercase py-4 text-sand-bg hover:bg-yellow-light hover:text-yellow-dark">
                             Checkout
                         </button>
                     </div>
