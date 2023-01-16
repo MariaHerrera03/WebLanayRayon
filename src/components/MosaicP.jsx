@@ -25,8 +25,8 @@ function Mosaic() {
 
     const objectProduct = {
         id: 1,
-        title: 'Bolitas x 6 para el árbol',
-        price: 80000,
+        title: 'Muñeco personalizado de un humano',
+        price: 55000,
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys.',
         image: "https://github.com/MariaHerrera03/ImageBank/blob/main/PersonalizadosUNO.png?raw=true",
         quantity: count || 1,

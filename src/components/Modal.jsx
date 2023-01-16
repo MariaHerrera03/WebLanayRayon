@@ -15,7 +15,7 @@ function Modal({visible, onClose}) {
     const objectProduct = {
         id: 1,
         title: 'Muñeco personalizado de un humano',
-        price: 55000,
+        price: 55.000,
         description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys.',
         image: "https://github.com/MariaHerrera03/ImageBank/blob/main/PersonalizadosUNO.png?raw=true",
     };
