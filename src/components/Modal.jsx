@@ -1,4 +1,5 @@
 import React from 'react'
+import { useCartDetails } from '../context/useCartDetails';
 import { RiCloseFill } from 'react-icons/ri'
 
 function Modal({visible, onClose}) {
@@ -10,6 +11,8 @@ function Modal({visible, onClose}) {
 
     if (!visible) return null;
 
+    const {} = useContext(useCartDetails);
+
     return (
         <div id='container' onClick={handleOnClose} className='fixed inset-0 backdrop-blur-md flex justify-center items-center z-[20]'>
             <div className='bg-sand-bg p-2 w-4/5 rounded-sm border-2 border-magenta-light'>
@@ -20,6 +23,7 @@ function Modal({visible, onClose}) {
                     <h2 className='text-base font-bold text-orange-light py-4'>$80.00 COP </h2>
                     <p className='text-base leading-5 text-orange-light'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
                     </p>
+                <button className='relative -top-6 w-full'><RiCloseFill size={25} className='absolute fill-magenta-dark cursor-pointer right-0 top-0'/>AGREGAR</button>
                 </section>
             </div>
         </div>

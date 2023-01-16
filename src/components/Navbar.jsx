@@ -3,6 +3,7 @@ import imageLogo from '../assets/img/logo.png';
 import { FaBars, FaShoppingCart, FaInstagram, FaEnvelope, FaPhone } from 'react-icons/fa'
 import { RiCloseFill } from 'react-icons/ri'
 import { Link } from 'react-router-dom'
+import Ejemplo from '../components/Ejemplo'
 
 const Navbar = () => {
 
@@ -14,6 +15,8 @@ const Navbar = () => {
     const handleCloseMenu = () => {
         setNavClass('hidden')
     };
+
+    const [isOpenDetailsCart, setOpenDetailsCart] = useState(false)
 
     return (
         <div className='sticky z-[10] top-0 w-full'>
@@ -65,10 +68,10 @@ const Navbar = () => {
                     <Link to='/'><img src={imageLogo} alt='Logo Lana & Rayón'/></Link>
                 </div>
                 <div className='colThree col-start-5 col-end-6 items-center'>
-                    <button><FaShoppingCart size={25} className='fill-purple-dark'/></button>
-                    <section>
-
-                    </section>
+                    <button onClick={() => setOpenDetailsCart(!isOpenDetailsCart)}><FaShoppingCart size={25} className='fill-purple-dark'/></button>
+                    {
+                        isOpenDetailsCart && <Ejemplo/>
+                    }
                 </div>
             </div>
         </div>
