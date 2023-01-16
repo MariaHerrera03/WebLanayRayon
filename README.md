@@ -25,7 +25,7 @@ https://www.figma.com/file/3ArdlLjVBlMz3A1NfQDeZK/Lana-%26-Ray%C3%B3n?t=BrpVEPaa
 
 A continuación, podrás darle un vistazo a la web:
 
-![App Screenshot](https://github.com/MariaHerrera03/ImageBank/blob/main/VistaPreviaWeb.png?raw=true)
+![App Screenshot](https://github.com/MariaHerrera03/ImageBank/blob/main/VistaPreviaWebLR.png?raw=true)
 
 ## Demo 🔗
 
