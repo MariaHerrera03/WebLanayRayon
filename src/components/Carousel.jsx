@@ -5,10 +5,10 @@ import {FaChevronLeft, FaChevronRight, FaCircle} from 'react-icons/fa'
 function Carousel() {
 
     const slides = [
-        { url: 'https://github.com/MariaHerrera03/ImageBank/blob/main/imgCarouselOne.png?raw=true',},
-        { url: 'https://github.com/MariaHerrera03/ImageBank/blob/main/imgCarouselTwo.png?raw=true',},
-        { url: 'https://github.com/MariaHerrera03/ImageBank/blob/main/imgCarouselThree.png?raw=true',},
-        { url: 'https://github.com/MariaHerrera03/ImageBank/blob/main/imgCarouselFour.png?raw=true',},
+        { url: 'https://github.com/MariaHerrera03/ImageBank/blob/main/Lana&Ray%C3%B3n/imgCarouselOne.png?raw=true',},
+        { url: 'https://github.com/MariaHerrera03/ImageBank/blob/main/Lana&Ray%C3%B3n/imgCarouselTwo.png?raw=true',},
+        { url: 'https://github.com/MariaHerrera03/ImageBank/blob/main/Lana&Ray%C3%B3n/imgCarouselThree.png?raw=true',},
+        { url: 'https://github.com/MariaHerrera03/ImageBank/blob/main/Lana&Ray%C3%B3n/imgCarouselFour.png?raw=true',},
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,7 +30,7 @@ function Carousel() {
     };
 
     return (
-        <div className='h-56 w-full py-6 px-5 relative group'>
+        <div className='h-56 w-full md:w-[50%] mx-auto py-6 px-5 relative group'>
             <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className='w-full h-full bg-center bg-cover duration-500 rounded border-2 border-purple-light'>
             </div>
             <div className='hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 rounded-full p-2 mx-2 bg-purple-light/50 text-sand-bg cursor-pointer'>

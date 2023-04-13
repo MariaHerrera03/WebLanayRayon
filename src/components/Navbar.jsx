@@ -26,7 +26,7 @@ const Navbar = () => {
             <div className='containerOne bg-sand-light-70 px-10 py-2'>
                 <h5 className='text-center text-purple-dark text-xs leading-5'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</h5>
             </div>
-            <div className='containerTwo w-18 bg-sand-bg px-10 py-2 grid grid-cols-5 gap-10 items-center justify-items-center'>
+            <div className='containerTwo w-18 md:w-[81%] bg-sand-bg mx-auto px-10 py-2 grid grid-cols-5 gap-10 items-center justify-items-center'>
                 <div className='colOne col-start-1 col-end-2 items-center'>
                     <button onClick={handleOpenMenu}>
                         <FaBars size={25} className='fill-purple-dark cursor-pointer'/>
@@ -48,7 +48,7 @@ const Navbar = () => {
                                 <a href='https://www.instagram.com/lanayrayon/'>
                                     <FaInstagram size={35} className='fill-light px-2'/>
                                 </a>
-                                <a href='https://www.instagram.com/lanayrayon/'>
+                                <a href='https://www.instagram.com/lanayrayon/' target={'_blank'}>
                                     <h1 className='text-light text-sm leading-5'>@lanayrayon</h1>
                                 </a>
                             </div>
@@ -57,10 +57,10 @@ const Navbar = () => {
                                 <h1 className='text-light text-sm leading-5'>lanayrayon@gmail.com</h1>
                             </div>
                             <div className='containerMenuThree flex items-center'>
-                                <a href='https://api.whatsapp.com/send?phone=573203401248'>
+                                <a href='https://api.whatsapp.com/send?phone=573203401248' target={'_blank'}>
                                     <FaPhone size={35} className='fill-light px-2'/>
                                 </a>
-                                <a href='https://api.whatsapp.com/send?phone=573203401248'>
+                                <a href='https://api.whatsapp.com/send?phone=573203401248' target={'_blank'}>
                                     <h1 className='text-light text-sm leading-5'>+57 320 3401448</h1>
                                 </a>
                             </div> 
